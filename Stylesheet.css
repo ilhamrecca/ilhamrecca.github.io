@@ -149,7 +149,7 @@ nav h2 {
     font-family: "Varela Round", sans-serif;
     font-size: 1.2rem;
     padding-right: 1.5rem;
-    border-right: e9f0fb# solid 1px;
+    border-right: #e9f0fb solid 1px;
 }
 
 nav a,
@@ -603,9 +603,6 @@ input:checked + .slider:before {
         display: flex;
         flex-direction: column;
     }
-}
-@media (min-width: 768) {
-    min-height: 950px;
 }
 @media (max-width: 768px) {
     .price {
