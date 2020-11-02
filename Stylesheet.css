@@ -199,7 +199,6 @@ nav a,
 
 .banner-text h1 {
     font-size: 4rem;
-    text-align: center;
 }
 
 .banner-text p {
@@ -518,8 +517,10 @@ input:checked + .slider:before {
 
     .banner-text h1 {
         font-size: 2rem;
+        text-align: center;
     }
     .banner-text h3 {
+        text-align: center;
         margin-top: 1em;
         margin-bottom: 0;
     }
