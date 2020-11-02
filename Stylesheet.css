@@ -339,7 +339,7 @@ nav a,
     background: transparent;
     color: var(--clr-button);
     border-radius: var(0.2rem);
-    transition: background 200ms ease-in, color 200ms ease-in;
+    transition: background-color 200ms ease-in, color 200ms ease-in;
 }
 
 .card:hover {
@@ -599,6 +599,22 @@ input:checked + .slider:before {
         background-color: var(--clr-button);
     }
 }
+
+@media (min-height: 992px) {
+    .page-one {
+        height: auto;
+    }
+
+    .price {
+        height: auto;
+    }
+
+    .how-it-works {
+        margin-bottom: 2em;
+        height: auto;
+    }
+}
+
 @media (max-width: 360px) {
     .hero-button {
         display: flex;
