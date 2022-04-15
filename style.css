@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: "Gothic A1", sans-serif;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+}
+.header-section {
+    background-image: linear-gradient(to bottom right, #8380FF, purple);
+    padding: 2rem 7.5rem;
+    min-height: 100vh;
+    transition: 0.3s ease-in;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header ul span {
+    font-size: 2rem;
+    display: none;
+}
+.header ul li {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header img {
+    width: 120px;
+    height: 42.53px;
+}
+
+.hero-banner {
+    display: flex;
+    /* height: 100%; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 170px;
+}
+
+.hero-banner img {
+    margin-top: 3rem;
+    max-width: 50%;
+}
+
+.hero-text {
+    margin-top: 8rem;
+    /* width: 50%; */
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.hero-text p {
+    color: white;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.hero-text button {
+    padding: 1.1rem 3rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #8380FF;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s ease-in;
+}
+
+.hero-text button:hover {
+    background-color: white;
+    color: gray;
+}
+
+
+.websites-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 10rem;
+    transition: 0.3s ease-in;
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.website-text {
+    width: 40%;
+    min-width: 200px;
+    margin: 1.5rem;
+}
+
+.website-text p {
+    color: #a8a8a8;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.website-text h3 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.website img {
+    width: 40%;
+    min-width: 250px;
+}
+
+
+.dark-mode .header-section {
+    background-image: linear-gradient(to bottom right, #414141, #1b1b1b);
+    transition: 0.3s ease-in-out;
+}
+
+.dark-mode .hero-text button {
+    background-color: #414141;
+    color: white;
+}
+
+.dark-mode .websites-section {
+    transition: 0.3s ease-in;
+
+    background-color: #000000;
+}
+
+.dark-mode .website-text p {
+    color: whitesmoke;
+}
+
+.dark-mode .website-text h3 {
+    color: white;
+}
+
+.dark-mode a{
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 992px) {
+    .hero-text {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header ul li {
+        display: none;
+    }
+    .header ul span {
+        display: inline;
+        color: pink;
+    }
+    .hero-banner {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-banner img {
+        min-width: 20rem;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+    .hero-text button {
+        margin: 0.8rem;
+    }
+
+    .website {
+        text-align: center;
+    }
+
+    .websites-section {
+        padding: 4rem;
+    }
+
+    .website-text {
+        width: 100%;
+    }
+    .special .website-text {
+        order: 1;
+    }
+    .special img {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+}

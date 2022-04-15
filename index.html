@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <title>IlhamRecca</title>
+    </head>
+    <body>
+        <div class="header-section">
+            <div class="header">
+                <img src="./img/headerName.png" alt="logo" />
+                <ul>
+                    <li><a href="#">About Me</a></li>
+
+                    <span class="fas fa-bars"></span>
+                </ul>
+            </div>
+            <div class="hero-banner">
+                <div class="hero-text">
+                    <h1>My Portofolio</h1>
+                    <p>Hope you like it!</p>
+                    <button>Let's go</button>
+                    <button onclick="darkMode()">Come to the Darkside</button>
+                </div>
+                <img
+                    src="./img/heroBanner.png"
+                    alt="hero banner"
+                    width="500px"
+                />
+            </div>
+        </div>
+        <!-- <div class="about-section">
+            <p>AENEAN CONSECTETUR PORTA</p>
+            <h2>Nullam quis risus eget urna mollis ornare vel eu leo.</h2>
+            <img
+                src="https://uploads-ssl.webflow.com/5af49de0dbb1e3637f2d8886/5afa1b861bc189407c1a9b2c_dash-device-p-1600.png"
+                alt="about image"
+            /> -->
+        </div>
+        <div class="websites-section">
+            <div class="website">
+                <div class="website-text">
+                    <p>First Website</p>
+                    <h3><a href="https://ilhamrecca.github.io/Create.com/index.html">Create.com</a></h3>
+                    <p>
+                        Website dengan desain simpel yang dibuat dengan pure HTML & CSS
+                    </p>
+                </div>
+                <img
+                    src="./img/web1.png"
+                    alt="website 1"
+                />
+            </div>
+            <div class="website special">
+                <img
+                    src="./img/web2.png"
+                    alt="Website 2"
+                />
+                <div class="website-text">
+                    
+                    <h3><a href="https://ilhamrecca.github.io/Movies4me/index.html">Movies4me  </a></h3>
+                    <p>
+                        Website untuk merekomendasikan movie berdasarkan apa yang telah di tonton pengguna sebelumnya!.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const darkMode = () => {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+        };
+    </script>
+</html>
